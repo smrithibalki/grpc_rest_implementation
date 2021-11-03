@@ -1,3 +1,5 @@
+import HelperUtils.CreateLogger
+
 import java.util.Base64
 import java.nio.charset.StandardCharsets
 import com.smrithi.protobuf.hello.{Input, Response}
@@ -13,11 +15,11 @@ import java.util.Base64
  * @param url URL for the API Gateway that triggers the lambda function.
  */
 class GRPCClient(url: String) {
+  val logger = CreateLogger(classOf[GRPCClient])
 //  implicit val system = ActorSystem()
 //  implicit val materializer = ActorMaterializer()
-  print(url)
    def evaluate(expression: Input): Boolean = {
-    //logger.trace(s"calculate(expression: $expression")
+    logger.trace(s"calculate(expression: $expression")
     // Make POST request to calculator API Gateway
     val request = Http(url)
       .headers(Map(
@@ -26,7 +28,7 @@ class GRPCClient(url: String) {
       ))
       .timeout(connTimeoutMs = 2000, readTimeoutMs = 10000) // So that request doesn't time out for Lambda cold starts
       .postData(expression.toByteArray)
-     println(expression.toByteArray)
+
     //logger.debug(s"Making HTTP request: $request")
     val response = request.asBytes
 

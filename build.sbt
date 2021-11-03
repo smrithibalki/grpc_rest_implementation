@@ -6,7 +6,8 @@ scalaVersion := "2.13.6"
 
 
 val akkaVersion = "2.5.26"
-
+val logbackVersion = "1.3.0-alpha10"
+val typesafeConfigVersion = "1.4.1"
 val akkaHttpVersion = "10.1.11"
 
 assemblyMergeStrategy in assembly := {
@@ -17,6 +18,10 @@ assemblyMergeStrategy in assembly := {
 
 libraryDependencies ++=Seq(
   "com.typesafe" % "config" % "1.3.2",
+  "ch.qos.logback" % "logback-core" % logbackVersion,
+  "ch.qos.logback" % "logback-classic" % logbackVersion,
+  "com.typesafe" % "config" % typesafeConfigVersion,
+  "com.typesafe" % "config" % typesafeConfigVersion,
   "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2",
   "ch.qos.logback" % "logback-classic" % "1.2.3",
   "org.gnieh" % "logback-config" % "0.3.1",
@@ -29,9 +34,9 @@ libraryDependencies ++=Seq(
   "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion,
   "org.scalaj" %% "scalaj-http" % "2.4.2",
   //"com.thesamet.scalapb" %% "scalapb-json4s" % "0.7.0",
-  // akka streams
-  "com.twitter" %% "finagle-http" % "21.10.0",
 
+  "com.twitter" %% "finagle-http" % "21.10.0",
+  // akka streams
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
 // akka http
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,

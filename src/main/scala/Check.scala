@@ -1,4 +1,5 @@
 
+import HelperUtils.CreateLogger
 import com.smrithi.protobuf.hello.Input
 import com.typesafe.config.{Config, ConfigFactory}
 //import com.typesafe.scalalogging.Logger
@@ -21,8 +22,8 @@ import scala.math.Ordered.orderingToOrdered
 object Check extends App {
 
   // Load application settings
-  val logger: Logger = LoggerFactory.getLogger(getClass)
-
+  //val logger: Logger = LoggerFactory.getLogger(getClass)
+  val logger = CreateLogger(classOf[Check.type ])
   val conf: Config = ConfigFactory.load("application.conf")
   val grpc_url :String = conf.getString("homework3.grpc")
   val rest_url :String = conf.getString("homework3.rest")
@@ -37,7 +38,6 @@ object Check extends App {
 
 
   val dtf: DateTimeFormatter = DateTimeFormatter.ofPattern(timestamp_pattern)
-      //val interval = LocalTime.parse("00:13:00", dtf)
   val t = LocalTime.parse(time, dtf)
 
   val upper_interval = t.plusMinutes(dt+1)
@@ -46,16 +46,16 @@ object Check extends App {
       // Make an Expression protobuf and evaluate the result
   val client = new GRPCClient(grpc_url)
   val result = client.evaluate(Input(time = time,dt = length))
-  println(s"\nResult = $result")
+  logger.info(s"\nResult = $result")
   if (result == true) {
 
-    println("Executing RESTAPI with Finagle HTTP Framework")
-    val client_finagle = new REST_Finagle("https://f1bmo1rvph.execute-api.us-east-2.amazonaws.com/default/rest_function")
+    logger.info("Executing RESTAPI with Finagle HTTP Framework")
+    val client_finagle = new REST_Finagle(rest_url)
     val rest_finagle = client_finagle.rest_evaluate(lower_interval, upper_interval)
-    println("Completed Execution with Finagle Framework")
+    logger.info("Completed Execution with Finagle Framework")
   }
   else {
-        println("The given Timestamp is not present")
+        logger.info("The given Timestamp is not present")
       }
 
 }

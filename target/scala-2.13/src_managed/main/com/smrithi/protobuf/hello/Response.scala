@@ -5,9 +5,6 @@
 
 package com.smrithi.protobuf.hello
 
-/** @param result
-  *  Expression expression = 1;
-  */
 @SerialVersionUID(0L)
 final case class Response(
     result: _root_.scala.Boolean = false,

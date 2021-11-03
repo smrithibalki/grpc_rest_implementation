@@ -1,3 +1,4 @@
+import HelperUtils.CreateLogger
 import com.typesafe.config.{Config, ConfigFactory}
 //import com.typesafe.scalalogging.Logger
 import org.slf4j.{Logger, LoggerFactory}
@@ -26,16 +27,13 @@ import java.time.LocalTime
  *
  * @param url URL for the API Gateway that triggers the lambda function.
  */
-//import com.twitter.finagle.{Http, Service}
-//import com.twitter.finagle.http
-//import com.twitter.util.{Await, Future}
-//import system.dispatcher
+
 
 object RESTClient {
-  val logger: Logger = LoggerFactory.getLogger(getClass)
-
+  //val logger: Logger = LoggerFactory.getLogger(getClass)
+  val logger = CreateLogger(classOf[RESTClient.type])
   val conf: Config = ConfigFactory.load("application.conf")
-
+  val url = conf.getString("homework3.rest")
   val timestamp_pattern = conf.getString("homework3.t_pattern")
   logger.info("--- Starting The Execution")
   val time = conf.getString("homework3.timestamp")
@@ -50,46 +48,14 @@ object RESTClient {
 
   val UB = t.plusMinutes(dt+1)
   val LB = t.minusMinutes(dt)
-//  def rest_evaluate(time:String,dt:String,pattern:String) {
-//   // print(url+"?"+time+","+dt+","+pattern)
-//    val client: Service[http.Request, http.Response] = Http.client.withTls("ttavy7jplj.execute-api.us-east-2.amazonaws.com").newService(s"ttavy7jplj.execute-api.us-east-2.amazonaws.com:443")
-//    val request = http.Request(url+"?"+time+","+dt+","+pattern)
-//    //request.host = "www.scala-lang.org"
-//    val response: Future[http.Response] = client(request)
-//    Await.result(response.onSuccess { rep: http.Response => println("GET success: " + rep.contentString) })
-//
-//
-//  }
-//def rest_evaluate(myCode: String): Future[String] = {
-//
-//  implicit val system = ActorSystem()
-//  implicit val materializer = ActorMaterializer()
-//  val responseFuture = Http().singleRequest(
-//      HttpRequest(
-//        method = HttpMethods.POST,
-//        //uri = "http://markup.su/api/highlighter",
-//        uri = url,
-//        entity = HttpEntity(
-//          ContentTypes.`application/x-www-form-urlencoded`,
-//          s"source=${URLEncoder.encode(myCode.trim, "UTF-8")}&language=Scala&theme=Sunburst"
-//        )
-//      )
-//  )
-////  print(responseFuture)
-//  responseFuture
-//    .flatMap(_.entity.toStrict(2 seconds))
-//    .map(_.data.utf8String).foreach(println)
-//  responseFuture
-//    .flatMap(_.entity.toStrict(2 seconds))
-//    .map(_.data.utf8String)
-//}
+
 implicit val system: ActorSystem = ActorSystem()
   implicit val materializer: ActorMaterializer = ActorMaterializer()
   import system.dispatcher
 
   def rest_evaluate(LB :LocalTime,UB:LocalTime): Future[String] = {
     //    val responseFuture: Future[HttpResponse] = Http().singleRequest(request)
-    val responseFuture: Future[HttpResponse] = Http().singleRequest(Get("https://f1bmo1rvph.execute-api.us-east-2.amazonaws.com/default/rest_function?lower_interval="+LB+"&upper_interval="+UB))
+    val responseFuture: Future[HttpResponse] = Http().singleRequest(Get(url+"?lower_interval="+LB+"&upper_interval="+UB))
     val entityFuture: Future[HttpEntity.Strict] = responseFuture.flatMap(response => response.entity.toStrict(2.seconds))
     entityFuture.map(entity => entity.data.utf8String)
 
@@ -99,7 +65,8 @@ implicit val system: ActorSystem = ActorSystem()
 
   def main(args: Array[String]): Unit ={
     val res = Await.result(rest_evaluate(LB :LocalTime,UB:LocalTime),2000 millis)
-    println(res)
+    logger.info("Printing the Result (Hash codes / 404)")
+    logger.info(res)
   }
 
 
