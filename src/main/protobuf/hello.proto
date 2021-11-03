@@ -3,7 +3,7 @@ syntax = "proto3";
 option java_package = "com.smrithi.protobuf";
 
 
-service Calculator {
+service LogCheck {
   rpc Evaluate(Input) returns (Response);
 }
 
@@ -13,7 +13,6 @@ message Input {
   string dt = 2;
 
 }
-
 
 message Response {
 
