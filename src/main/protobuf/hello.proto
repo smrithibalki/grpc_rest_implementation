@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.smrithi.protobuf";
+
+
+service Calculator {
+  rpc Evaluate(Input) returns (Response);
+}
+
+
+message Input {
+  string time = 1;
+  string dt = 2;
+
+}
+
+
+message Response {
+  //Expression expression = 1;
+  bool result = 1;
+
+}
