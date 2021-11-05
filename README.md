@@ -8,7 +8,7 @@ The goal of this project is to gain experience with solving a distributed comput
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) installed and configured on your system
 - `protoc` should be installed
 ##### To Run
-- Clone this repository https://github.com/smrithibalki/.git=====?
+- Clone this repository https://github.com/smrithibalki/grpc_rest_implementation.git
 - Browse to the project directory. Import in intelliJ
 - Run the following commands : 
 - ` sbt clean compile`
@@ -50,15 +50,16 @@ This project is an implementation of GRPC and RESTAPI for the communication of  
 - The client invokes a Lambda Function say(L1) via GRPC to check if the given TimeStamp exists in log files in the S3 bucket.
 - If the TimeStamp exists, then the client invokes another Lambda Function say(L2) via REST where it checks if messages are present in the Time Interval specified
 - If present, returns the MD5 generated hash code. Else, returns 404 HTTP status
-##### LAMBDA FUNCTIONS
-######L1 
+##### LAMBDA FUNCTIONS 
+##### L1 -/lambda_functions/binary_serach.py 
+- This is uploaded as a zip file in AWS lambda along with the python depandency packages using the reference link below
 - Binary Search is performed on the S3 bucket to check if the TimeStamp is present.
 - Using the binary search we reduce the complexity of searching from O(N) to O(Log N).
 - Line caching is performed to read a particular need line in the file rather than reading all contents of the file.
 - Example  `linecache.getline(linecache.__file__, 8)` linecache takes 2 parameters, 1- filename and 2- line number.
 - The return value of this Lambda function is a boolean value.
 - True, if the TimeStamp exists. Else, false
-######L2
+##### L2 - /lambda_functions/rest_function.py
 - This function is invoked only if the first Lambda function(L1) returns True.
 - Binary search is performed on the files present in the S3 bucket to check if log messages exists between the specified Time interval.
 - If present, returns  an MD5 generated hash code. else, returns HTTP 404 status.
