@@ -14,13 +14,13 @@ The goal of this project is to gain experience with solving a distributed comput
 - ` sbt clean compile`
 - `sbt run `
 - After you run the above command , 2 options will be provided as below
-- ![SBT_RUN](img.png)
+- ![SBT_RUN](images/img.png)
 - Enter 2, to see the first the client call GRPC and when returned True, client call REST API via Finagle Framework
 - Enter 1, to see the implementation of the REST API via the AKKA HTTP Framework
 
 ##### PROJECT STRUCTURE
 
-![Project_Structure1](img_1.png) 
+![Project_Structure1](images/img_1.png) 
 - project build consists of all .sbt files with all plugins needed for the project
 - assembly.sbt -- Plugin to generate a jar file
 - scalapb.sbt -- ProtoBuf for Scala
@@ -40,7 +40,7 @@ The goal of this project is to gain experience with solving a distributed comput
 - Implements a RESTful service for retrieving log messages using one of the popular framework: Finagle.
 ###### RESTClient_AKKA
 - Implements a RESTful service for retrieving log messages using one of the popular framework: AKKA.
-- ![Project_Structure2](img_4.png)
+- ![Project_Structure2](images/img_4.png)
 - test -- AllTests -- consists of Tests written
 - com.smrithi.protobuf.hello - ProtoBuf generated files
 ##### PROJECT OVERVIEW
@@ -92,28 +92,28 @@ It’s not a web-framework but rather a more general toolkit for providing and c
           - TimeInterval - 1 minute
 
 - If TimeStamp exists
-![GRPC.png](img_5.png)
+![GRPC.png](images/img_5.png)
 - Input   - TimeStamp - "23:56:53"
           - TimeInterval - 1 minute
 - If TimeSTamp doesn't exists
-![GRPC1.png](img_6.png)
+![GRPC1.png](images/img_6.png)
 
 #### REST via Finagle - Lambda Invocation
 - Only invoked if received True from GRPC
 - Input   - TimeStamp - "13:14:53"
           - TimeInterval - 1 minute
-![REST_Finagle.png](img_7.png)
+![REST_Finagle.png](images/img_7.png)
 #### REST via AKKA HTTP - Lambda Invocation
 - Only invoked if received True from GRPC
 - Input   - TimeStamp - "13:14:53"
           - TimeInterval - 1 minute
-- ![REST_AKKA.png](img_8.png)
+- ![REST_AKKA.png](images/img_8.png)
 
 ##### NOTE - The logs can be viewed in the log folder
 
 ##### EXPERIMENTS
 POSTMAN RESULTS
-![REST_postman.png](img_9.png)
+![REST_postman.png](images/img_9.png)
 EC2 Instances
 CloudWatch Logs 
 - Lambda function (L1)
