@@ -1,0 +1,5 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS_homework3\src\main\protobuf\hello.proto,D:\CS_homework3\target\scala-2.13\classes\hello.proto)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS_homework3\src\main\resources\application.conf,D:\CS_homework3\target\scala-2.13\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS_homework3\src\main\resources\logback-test.xml,D:\CS_homework3\target\scala-2.13\classes\logback-test.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS_homework3\src\main\resources\logback.xml,D:\CS_homework3\target\scala-2.13\classes\logback.xml)[0m
