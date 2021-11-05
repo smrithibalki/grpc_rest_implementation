@@ -1,4 +1,4 @@
-# CS 441 - HOMEWORK 3 
+# CS 441 - Implementing GRPC Service using ProtoBuffers and RESTful service on Twitter Finagle Framework and AKKA HTTP Framework to invoke AWS Lambda Functions 
 ### GOAL
 The goal of this project is to gain experience with solving a distributed computational problem using cloud computing technologies by designing and implementing a RESTful service and a lambda function that are accessed from clients using gRPC.
 
@@ -28,17 +28,17 @@ The goal of this project is to gain experience with solving a distributed comput
 - resources -- It has the configuration files and XML files to support logs
 - HelperUtills -- Utils file to Create Logger
 ###### Scala Files
-####### RunFirst 
+###### RunFirst 
 - Main class which takes the inputs like timestamp and timeinterval from configuration file 
 - Creates a client with the url/endpoint as a parameter for GRPC
 - If returned true, from GRPC client , creates a REST class with REST API endpoint as a url
-####### GRPCClient
+###### GRPCClient
 - In this class, client invokes the lambda function in AWS with the url specified.
 - It's inpput is the ProtoBuf object(Request and Response Format)
 - Returns a Boolean value
-####### REST_Finagle
+###### REST_Finagle
 - Implements a RESTful service for retrieving log messages using one of the popular framework: Finagle.
-####### RESTClient_AKKA
+###### RESTClient_AKKA
 - Implements a RESTful service for retrieving log messages using one of the popular framework: AKKA.
 - ![Project_Structure2](img_4.png)
 - test -- AllTests -- consists of Tests written
@@ -87,3 +87,58 @@ It’s not a web-framework but rather a more general toolkit for providing and c
 - It returns MD5 hash codes or HTTP 404 statuscode.
 
 ##### RESULTS
+#### GRPC - Lambda Invocation
+- Input   - TimeStamp - "13:14:53"
+          - TimeInterval - 1 minute
+
+- If TimeStamp exists
+![GRPC.png](img_5.png)
+- Input   - TimeStamp - "23:56:53"
+          - TimeInterval - 1 minute
+- If TimeSTamp doesn't exists
+![GRPC1.png](img_6.png)
+
+#### REST via Finagle - Lambda Invocation
+- Only invoked if received True from GRPC
+- Input   - TimeStamp - "13:14:53"
+          - TimeInterval - 1 minute
+![REST_Finagle.png](img_7.png)
+#### REST via AKKA HTTP - Lambda Invocation
+- Only invoked if received True from GRPC
+- Input   - TimeStamp - "13:14:53"
+          - TimeInterval - 1 minute
+- ![REST_AKKA.png](img_8.png)
+
+##### NOTE - The logs can be viewed in the log folder
+
+##### EXPERIMENTS
+POSTMAN RESULTS
+![REST_postman.png](img_9.png)
+EC2 Instances
+CloudWatch Logs 
+- Lambda function (L1)
+- Lambda function (L2)
+
+##### TEST
+The tests can be viewed in /src/test/scala/AllTests
+
+-- The following test cases are provided:
+- Test for the timestamp pattern
+- Test for the timestamp input
+- Test for the timeinterval input in minutes 
+- Check for GRPC Endpoint
+- Check for plusMinutes and minusMinutes to calculate time intervals
+- Check for REST Endpoint
+- To run the testcases give the following command
+```
+sbt test
+```
+
+##### Reference Links
+- [Protobuf](https://grpc.io/docs/what-is-grpc/introduction/)
+- [LineCache](https://docs.python.org/3/library/linecache.html)
+- [Finagle](https://twitter.github.io/finagle/guide/Quickstart.html)
+- [AKKA-HTTP](https://doc.akka.io/docs/akka-http/current/introduction.html)
+- [EC2-to-S3](https://www.middlewareinventory.com/blog/ec2-s3-copy/)
+- [Guide](https://blog.sourcerer.io/full-guide-to-developing-rest-apis-with-aws-api-gateway-and-aws-lambda-d254729d6992)
+- [Python_pkg_aws_lamda](https://towardsdatascience.com/how-to-install-python-packages-for-aws-lambda-layer-74e193c76a91)
