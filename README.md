@@ -1,8 +1,14 @@
 # CS 441 - Implementing GRPC Service using ProtoBuffers and RESTful service on Twitter Finagle Framework and AKKA HTTP Framework to invoke AWS Lambda Functions 
 ### GOAL
+
 The goal of this project is to gain experience with solving a distributed computational problem using cloud computing technologies by designing and implementing a RESTful service and a lambda function that are accessed from clients using gRPC.
 
+##### Deployment video links
+- [EC2 and S3] https://youtu.be/2u8CziITpxk
+- [Execution] https://youtu.be/jf1NjZpf1Rg
+
 #### INSTALLATION AND RUNNING THE PROJECT
+
 ##### Prerequisites
 - [SBT](https://www.scala-sbt.org/) installed on your system
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) installed and configured on your system

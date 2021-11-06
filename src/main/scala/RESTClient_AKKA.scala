@@ -68,7 +68,7 @@ implicit val system: ActorSystem = ActorSystem()
   }
 
   def main(args: Array[String]): Unit ={
-    val res = Await.result(rest_evaluate(LB :LocalTime,UB:LocalTime),2000 millis)
+    val res = Await.result(rest_evaluate(LB :LocalTime,UB:LocalTime),5000 millis)
     logger.info("Printing the Result (Hash codes / 404)")
     logger.info(res)
   }

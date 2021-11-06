@@ -11,12 +11,7 @@ class AllTests extends AnyFlatSpec with Matchers {
   it should "Check for the timestamp pattern" in {
     val formatter_test = "HH:mm:ss"
     val pattern_test =config.getString("homework3.t_pattern")
-    //    val startTime = LocalTime.parse(config.getString("homework3.timestamp"), formatter)
-    //    val endTime = LocalTime.parse(config.getString("configuration.endTime"), formatter)
-    //    val startTime_test = LocalTime.parse("19:55:33.412", formatter)
-    //    val endTime_Test = LocalTime.parse("20:11:06.281", formatter)
     assert(formatter_test == pattern_test)
-    //assert(endTime == endTime_Test)
 
   }
   it should "Check for the timestamp " in {

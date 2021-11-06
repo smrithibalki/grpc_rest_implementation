@@ -366,3 +366,263 @@ Result = true
 11:08:44.358 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
 11:08:46.333 [run-main-0] INFO  java.lang.Class - Printing the Result (Hash codes / 404)
 11:08:46.333 [run-main-0] INFO  java.lang.Class - ["f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "72dc0417d440fe866ddea36d3a20ef83", "9bb51835ef239ade33ba6ee171d70f03", "d223a27066e7e615f3c1dce553f01334", "7d56a8d412704a33d4b7ebb8fd511dc5", "467500026623cf0df8898b07b4d0b0d0", "acfa92ac244dd78f2929fcb996cb0a4d", "f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "39b67989733481feb30ec3facba4c0d9", "69d4c67b5c2c34e1effdff172aa0b978", "0dbf623f02e15d94186950e6ad19961a", "094f00f1a527fc68842c74495a2f3b96", "281edc34d4376b44769f99c9de1d2a8f", "fd18bf6a6144d8622acb0315a3039e40"]
+18:50:26.311 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+18:50:26.316 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+18:50:26.321 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+18:50:31.391 [run-main-0] INFO  java.lang.Class - 
+Result = true
+18:50:31.393 [run-main-0] INFO  java.lang.Class - Executing RESTAPI with Finagle HTTP Framework
+18:50:32.121 [run-main-0] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+18:50:32.126 [run-main-0] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+18:50:32.127 [run-main-0] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+18:50:32.168 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+18:50:32.174 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 11
+18:50:32.178 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+18:50:32.180 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+18:50:32.182 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+18:50:32.185 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+18:50:32.191 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+18:50:32.194 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @62ddea47
+18:50:32.202 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+18:50:32.205 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+18:50:32.209 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 1073741824 bytes (maybe)
+18:50:32.212 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\SMRITH~1\AppData\Local\Temp (java.io.tmpdir)
+18:50:32.214 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+18:50:32.217 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - Platform: Windows
+18:50:32.224 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+18:50:32.226 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+18:50:32.232 [run-main-0] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+18:50:32.236 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+18:50:32.242 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+18:50:32.244 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+18:50:32.246 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+18:50:32.248 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 7
+18:50:32.250 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 1048576
+18:50:32.253 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+18:50:32.256 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+18:50:32.259 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+18:50:32.260 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+18:50:32.263 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+18:50:32.265 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+18:50:32.268 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+18:50:32.291 [run-main-0] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+18:50:32.293 [run-main-0] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+18:50:32.929 [run-main-0] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7e25070f
+18:50:32.952 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+18:50:34.405 [run-main-0] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+18:50:34.513 [run-main-0] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+18:50:34.517 [run-main-0] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+18:50:34.616 [run-main-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 13688 (auto-detected)
+18:50:34.620 [run-main-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+18:50:34.620 [run-main-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+18:50:34.949 [run-main-0] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+18:50:34.957 [run-main-0] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+18:50:35.430 [run-main-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 9c:da:3e:ff:fe:a8:b6:f0 (auto-detected)
+18:50:35.516 [run-main-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+18:50:35.517 [run-main-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+18:50:35.518 [run-main-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+18:50:35.612 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: C:\Users\SMRITH~1\AppData\Local\Temp (io.netty.tmpdir)
+18:50:35.616 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+18:50:35.619 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+18:50:35.722 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - Successfully loaded the library C:\Users\SMRITH~1\AppData\Local\Temp\netty_tcnative_windows_x86_64127161209410086966.dll
+18:50:35.726 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - Initialize netty-tcnative using engine: 'default'
+18:50:35.728 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative using native library: BoringSSL
+18:50:35.763 [finagle/netty4-1-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+18:50:35.764 [finagle/netty4-1-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+18:50:35.765 [finagle/netty4-1-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@71b49556
+18:50:35.793 [finagle/netty4-1-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@771806d6
+18:50:35.808 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: disabled
+18:50:35.808 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: disabled
+18:50:35.809 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: disabled
+18:50:35.809 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: disabled
+18:50:35.810 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: disabled
+18:50:35.846 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+18:50:35.846 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+18:50:35.847 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+18:50:35.848 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+18:50:35.849 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+18:50:35.850 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+18:50:35.851 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+18:50:35.851 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+18:50:35.852 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+18:50:35.853 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+18:50:35.854 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+18:50:35.856 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+18:50:35.857 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+18:50:35.859 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+18:50:35.861 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+18:50:35.861 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+18:50:35.863 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+18:50:35.863 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+18:50:35.865 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+18:50:35.866 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+18:50:35.866 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+18:50:35.867 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+18:50:35.867 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+18:50:35.868 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+18:50:35.869 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+18:50:35.870 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+18:50:35.874 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+18:50:35.874 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+18:50:35.875 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+18:50:35.875 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+18:50:35.876 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+18:50:35.877 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+18:50:35.878 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+18:50:35.879 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+18:50:35.879 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+18:50:35.880 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+18:50:35.881 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+18:50:35.881 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+18:50:35.882 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+18:50:35.882 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+18:50:35.883 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2, TLSv1.3] 
+18:50:35.884 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+18:50:35.908 [finagle/netty4-1-1] INFO  i.n.h.s.ReferenceCountedOpenSslContext - BoringSSL doesn't allow to enable or disable TLSv1.3 ciphers explicitly. Provided TLSv1.3 ciphers: 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384', default TLSv1.3 ciphers that will be used: 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256'.
+18:50:35.923 [finagle/netty4-1-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4d55dddc
+18:50:36.715 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x0b445f25, L:/10.0.0.108:52656 - R:f1bmo1rvph.execute-api.us-east-2.amazonaws.com/18.188.166.191:443] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+18:50:39.584 [finagle/netty4-1-1] DEBUG i.n.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+18:50:39.655 [run-main-0] INFO  java.lang.Class - Completed Execution with Finagle Framework
+18:50:39.664 [finagle/netty4-1-1] INFO  java.lang.Class - GET success -- Printing the Hash codes/404 status code: ["f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "72dc0417d440fe866ddea36d3a20ef83", "9bb51835ef239ade33ba6ee171d70f03", "d223a27066e7e615f3c1dce553f01334", "7d56a8d412704a33d4b7ebb8fd511dc5", "467500026623cf0df8898b07b4d0b0d0", "acfa92ac244dd78f2929fcb996cb0a4d", "f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "39b67989733481feb30ec3facba4c0d9", "69d4c67b5c2c34e1effdff172aa0b978", "0dbf623f02e15d94186950e6ad19961a", "094f00f1a527fc68842c74495a2f3b96", "281edc34d4376b44769f99c9de1d2a8f", "fd18bf6a6144d8622acb0315a3039e40"]
+18:50:39.693 [finagle/netty4-1-1] DEBUG io.netty.channel.nio.NioEventLoop - Selector.select() returned prematurely because Thread.currentThread().interrupt() was called. Use NioEventLoop.shutdownGracefully() to shutdown the NioEventLoop.
+19:41:10.796 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+19:41:10.802 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+19:41:10.810 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+19:41:15.862 [run-main-0] INFO  java.lang.Class - 
+Result = true
+19:41:15.925 [run-main-0] INFO  java.lang.Class - Executing RESTAPI with Finagle HTTP Framework
+19:41:17.227 [run-main-0] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+19:41:17.231 [run-main-0] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+19:41:17.232 [run-main-0] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+19:41:17.367 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+19:41:17.368 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 11
+19:41:17.374 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+19:41:17.378 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+19:41:17.381 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+19:41:17.383 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+19:41:17.389 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+19:41:17.398 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1ef939b8
+19:41:17.400 [run-main-0] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+19:41:17.401 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+19:41:17.440 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 1073741824 bytes (maybe)
+19:41:17.476 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\SMRITH~1\AppData\Local\Temp (java.io.tmpdir)
+19:41:17.477 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:41:17.493 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - Platform: Windows
+19:41:17.496 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+19:41:17.498 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:41:17.503 [run-main-0] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+19:41:17.508 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+19:41:17.511 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
+19:41:17.512 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
+19:41:17.513 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+19:41:17.515 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 7
+19:41:17.516 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 1048576
+19:41:17.516 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+19:41:17.517 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+19:41:17.519 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+19:41:17.520 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+19:41:17.523 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+19:41:17.524 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+19:41:17.526 [run-main-0] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+19:41:17.551 [run-main-0] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+19:41:17.552 [run-main-0] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+19:41:18.749 [run-main-0] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6495352c
+19:41:18.809 [run-main-0] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+19:41:21.275 [run-main-0] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+19:41:21.411 [run-main-0] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+19:41:21.413 [run-main-0] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+19:41:21.651 [run-main-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 13148 (auto-detected)
+19:41:21.676 [run-main-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+19:41:21.677 [run-main-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+19:41:22.326 [run-main-0] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+19:41:22.335 [run-main-0] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+19:41:22.958 [run-main-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 9c:da:3e:ff:fe:a8:b6:f0 (auto-detected)
+19:41:23.072 [run-main-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+19:41:23.075 [run-main-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+19:41:23.076 [run-main-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+19:41:23.197 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.workdir: C:\Users\SMRITH~1\AppData\Local\Temp (io.netty.tmpdir)
+19:41:23.201 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+19:41:23.205 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+19:41:23.333 [finagle/netty4-1-1] DEBUG i.n.u.internal.NativeLibraryLoader - Successfully loaded the library C:\Users\SMRITH~1\AppData\Local\Temp\netty_tcnative_windows_x86_642961008383888150985.dll
+19:41:23.339 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - Initialize netty-tcnative using engine: 'default'
+19:41:23.341 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative using native library: BoringSSL
+19:41:23.458 [finagle/netty4-1-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+19:41:23.459 [finagle/netty4-1-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+19:41:23.460 [finagle/netty4-1-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@123095b7
+19:41:23.499 [finagle/netty4-1-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1911f52b
+19:41:23.531 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: disabled
+19:41:23.531 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: disabled
+19:41:23.533 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: disabled
+19:41:23.604 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: disabled
+19:41:23.606 [finagle/netty4-1-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: disabled
+19:41:23.654 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+19:41:23.655 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+19:41:23.658 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+19:41:23.660 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+19:41:23.660 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+19:41:23.661 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+19:41:23.661 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+19:41:23.662 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+19:41:23.663 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+19:41:23.664 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+19:41:23.664 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+19:41:23.665 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+19:41:23.666 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+19:41:23.666 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+19:41:23.667 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+19:41:23.669 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+19:41:23.673 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+19:41:23.674 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+19:41:23.675 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+19:41:23.676 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+19:41:23.677 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+19:41:23.677 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+19:41:23.678 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+19:41:23.681 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+19:41:23.682 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+19:41:23.687 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+19:41:23.692 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+19:41:23.706 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+19:41:23.709 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+19:41:23.711 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+19:41:23.712 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+19:41:23.713 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+19:41:23.715 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+19:41:23.731 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+19:41:23.733 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+19:41:23.739 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+19:41:23.741 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+19:41:23.744 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+19:41:23.811 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+19:41:23.832 [finagle/netty4-1-1] DEBUG i.n.handler.ssl.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+19:41:23.835 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2, TLSv1.3] 
+19:41:23.836 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+19:41:23.867 [finagle/netty4-1-1] INFO  i.n.h.s.ReferenceCountedOpenSslContext - BoringSSL doesn't allow to enable or disable TLSv1.3 ciphers explicitly. Provided TLSv1.3 ciphers: 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384', default TLSv1.3 ciphers that will be used: 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256'.
+19:41:23.911 [finagle/netty4-1-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2ae7757f
+19:41:24.659 [finagle/netty4-1-1] DEBUG io.netty.handler.ssl.SslHandler - [id: 0x2721218c, L:/10.0.0.108:54978 - R:f1bmo1rvph.execute-api.us-east-2.amazonaws.com/18.116.1.90:443] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+19:41:27.742 [finagle/netty4-1-1] DEBUG i.n.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+19:41:27.818 [finagle/netty4-1-1] INFO  java.lang.Class - GET success -- Printing the Hash codes/404 status code: ["f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "72dc0417d440fe866ddea36d3a20ef83", "9bb51835ef239ade33ba6ee171d70f03", "d223a27066e7e615f3c1dce553f01334", "7d56a8d412704a33d4b7ebb8fd511dc5", "467500026623cf0df8898b07b4d0b0d0", "acfa92ac244dd78f2929fcb996cb0a4d", "f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "39b67989733481feb30ec3facba4c0d9", "69d4c67b5c2c34e1effdff172aa0b978", "0dbf623f02e15d94186950e6ad19961a", "094f00f1a527fc68842c74495a2f3b96", "281edc34d4376b44769f99c9de1d2a8f", "fd18bf6a6144d8622acb0315a3039e40"]
+19:41:27.819 [run-main-0] INFO  java.lang.Class - Completed Execution with Finagle Framework
+19:41:27.846 [finagle/netty4-1-1] DEBUG io.netty.channel.nio.NioEventLoop - Selector.select() returned prematurely because Thread.currentThread().interrupt() was called. Use NioEventLoop.shutdownGracefully() to shutdown the NioEventLoop.
+19:43:44.637 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+19:43:44.655 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+19:43:44.681 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+19:43:46.703 [run-main-0] INFO  java.lang.Class - 
+Result = false
+19:43:46.725 [run-main-0] INFO  java.lang.Class - The given Timestamp is not present
+19:45:06.407 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+19:45:06.413 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+19:45:06.431 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+19:46:40.495 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+19:46:40.501 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+19:46:40.507 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+19:47:55.605 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+19:47:55.613 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+19:47:55.666 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+19:48:00.642 [run-main-0] INFO  java.lang.Class - Printing the Result (Hash codes / 404)
+19:48:00.643 [run-main-0] INFO  java.lang.Class - ["f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "72dc0417d440fe866ddea36d3a20ef83", "9bb51835ef239ade33ba6ee171d70f03", "d223a27066e7e615f3c1dce553f01334", "7d56a8d412704a33d4b7ebb8fd511dc5", "467500026623cf0df8898b07b4d0b0d0", "acfa92ac244dd78f2929fcb996cb0a4d", "f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "39b67989733481feb30ec3facba4c0d9", "69d4c67b5c2c34e1effdff172aa0b978", "0dbf623f02e15d94186950e6ad19961a", "094f00f1a527fc68842c74495a2f3b96", "281edc34d4376b44769f99c9de1d2a8f", "fd18bf6a6144d8622acb0315a3039e40"]
+20:10:02.461 [run-main-0] INFO  java.lang.Class - --- Starting The Execution
+20:10:02.464 [run-main-0] INFO  java.lang.Class - --- Taking the time stamp value from config file
+20:10:02.469 [run-main-0] INFO  java.lang.Class - --- Taking the time interval in minutes value from config file
+20:10:07.564 [run-main-0] INFO  java.lang.Class - Printing the Result (Hash codes / 404)
+20:10:07.564 [run-main-0] INFO  java.lang.Class - ["f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "72dc0417d440fe866ddea36d3a20ef83", "9bb51835ef239ade33ba6ee171d70f03", "d223a27066e7e615f3c1dce553f01334", "7d56a8d412704a33d4b7ebb8fd511dc5", "467500026623cf0df8898b07b4d0b0d0", "acfa92ac244dd78f2929fcb996cb0a4d", "f7e3e74968156265c000aa7df746f0b1", "bcc3bb02cb9c781918b9db3e2b0ad1a6", "39b67989733481feb30ec3facba4c0d9", "69d4c67b5c2c34e1effdff172aa0b978", "0dbf623f02e15d94186950e6ad19961a", "094f00f1a527fc68842c74495a2f3b96", "281edc34d4376b44769f99c9de1d2a8f", "fd18bf6a6144d8622acb0315a3039e40"]

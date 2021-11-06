@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AllTestCases, org.scalatest.tools.Framework$$anon$1@7edc071d, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AllTests, org.scalatest.tools.Framework$$anon$1@7edc071d, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AllTests, org.scalatest.tools.Framework$$anon$1@5034c6cf, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AllTestCases, org.scalatest.tools.Framework$$anon$1@5034c6cf, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAllTestCases:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m-  Check for plusMinutes and minusMinutes to calculate time intervals[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Check for REST Endpoint[0m[0m
@@ -8,7 +8,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Check for the timestamp[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Check for the timeinterval in minutes[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should Check for GRPC Endpoint[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 433 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 861 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 6[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 6, failed 0, canceled 0, ignored 0, pending 0[0m[0m
