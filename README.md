@@ -119,7 +119,12 @@ The docs is present in the docs folder in the root directory
           - TimeInterval - 1 minute
 - ![REST_AKKA.png](images/img_8.png)
 
-##### NOTE - The logs can be viewed in the log folder
+##### NOTE 
+- The logs can be viewed in the log folder
+- The EC2 instance can run repeat its execution for specific time period using bash scripts and cron jobs
+- crontab -e
+`* */3 * * * bash /home/ec2-user/<bashfile>.sh` - to run for every 3 hours
+
 
 ##### EXPERIMENTS
 POSTMAN RESULTS
