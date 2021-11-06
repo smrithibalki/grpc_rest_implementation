@@ -49,6 +49,7 @@ The goal of this project is to gain experience with solving a distributed comput
 - ![Project_Structure2](images/img_4.png)
 - test -- AllTests -- consists of Tests written
 - com.smrithi.protobuf.hello - ProtoBuf generated files
+
 ##### PROJECT OVERVIEW
 This project is an implementation of GRPC and RESTAPI for the communication of  client and server with Lambda functions.The flow of the project is as follows:
 - An EC2 instance is created and the following link is cloned and run [LogFileGenerator](https://github.com/0x1DOCD00D/LogFileGenerator).
@@ -58,7 +59,7 @@ This project is an implementation of GRPC and RESTAPI for the communication of  
 - If present, returns the MD5 generated hash code. Else, returns 404 HTTP status
 ##### LAMBDA FUNCTIONS 
 ##### L1 -/lambda_functions/binary_serach.py 
-- This is uploaded as a zip file in AWS lambda along with the python depandency packages using the reference link below
+- This is uploaded as a zip file in AWS lambda along with the python dependency packages using this link [Python_pkg_aws_lamda](https://towardsdatascience.com/how-to-install-python-packages-for-aws-lambda-layer-74e193c76a91)
 - Binary Search is performed on the S3 bucket to check if the TimeStamp is present.
 - Using the binary search we reduce the complexity of searching from O(N) to O(Log N).
 - Line caching is performed to read a particular need line in the file rather than reading all contents of the file.
@@ -93,6 +94,8 @@ It’s not a web-framework but rather a more general toolkit for providing and c
 - The client communicates with lambda functions with REST API calls on AKKA HTTP Framework.
 - It returns MD5 hash codes or HTTP 404 statuscode.
 
+##### NOTE 
+The docs is present in the docs folder in the root directory
 ##### RESULTS
 #### GRPC - Lambda Invocation
 - Input   - TimeStamp - "13:14:53"

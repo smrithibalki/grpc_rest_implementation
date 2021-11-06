@@ -29,20 +29,15 @@ class AllTests extends AnyFlatSpec with Matchers {
   it should "Check for the timeinterval in minutes " in {
 
     val formatter = DateTimeFormatter.ofPattern("HH:mm:ss")
-
     val timeinterval_test = 1
-
     val timeinterval = config.getInt("homework3.time_interval")
-
     assert(timeinterval_test == timeinterval)
 
   }
   it should "Check for GRPC Endpoint" in {
 
-
     val grpc_url = config.getString("homework3.grpc")
     val grpc_url_test = "https://r4uuq1pr7d.execute-api.us-east-2.amazonaws.com/default/hw3"
-
     assert(grpc_url_test == grpc_url)
 
   }
@@ -66,8 +61,6 @@ class AllTestCases extends AnyFunSuite {
 
     val rest_url = config.getString("homework3.rest")
     val rest_url_test = "https://f1bmo1rvph.execute-api.us-east-2.amazonaws.com/default/rest_function"
-
-
     assert(rest_url_test == rest_url)
 
 
